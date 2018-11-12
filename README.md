@@ -15,12 +15,17 @@ Bogotaapp ha de ser una Red Social destinada a integrar a las personas de una mi
 # Antedentes
 Existen otras aplicaciones que pueden leer la data de API's gubernamentales para certificar la validez de una cédula de identidad, como por ejemplo la app Verifique su Cedula: https://play.google.com/store/apps/details?id=se.verifique.app.cedula&hl=es Esta app pretende utilizar una de estas API's con el fin de permitir el registro única y exclusivamente para ciudadanos Colombianos
 
+# Configuraciones
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 
+ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
+
+Rails 5.1.6
+
 
 * System dependencies
 

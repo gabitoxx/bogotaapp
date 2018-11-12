@@ -39,7 +39,7 @@
         </div>
         <br/>
         <br/>
-        <%= link_to 'Sí soy yo, quiero ingresar', nameapi_path(), {:style=>'font-size: 30px;', :class => "btn btn-lg btn-primary "} %>
+        <%= link_to 'Sí soy yo, quiero ingresar', {:controller => 'home', :action => 'index'}, {:style=>'font-size: 30px;', :class => "btn btn-lg btn-primary "} %>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <span style="cursor: pointer;" onclick="javascript:wrongName();">
         	No es mi nombre, ¿qué puedo hacer?

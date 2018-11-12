@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   # generado con el comando en cmd: rails g controller welcome index
   get 'welcome/index'
 
+  # La 1ra página una vez logueado el usuario
+  get 'home/index'
 end

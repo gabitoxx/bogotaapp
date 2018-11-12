@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 text-left">
+      <%= image_tag("logo.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+      <br/>
+      BogotaApp
+    </div>
+    <div class="col-sm-4 text-center">
+      <%= image_tag("user1.jpg", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+      <br/>
+      Avatar
+      <br/>
+      Alias: <i>por definir</i>
+    </div>
+    <div class="col-sm-4 text-right">
+      <p>Usuario: <b><i>Pepito Perez</i></b></p>
+      <p>Localidad: <b>Puente Aranda</b></p>
+      <p>Antiguedad en esta localidad: <b>2 meses</b></p>
+    </div>
+    
+  <ul class="nav nav-tabs text-center">
+    <li class="active">
+      <a data-toggle="tab" href="#timeline">
+        <%= image_tag("timeline_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <br/>
+        Mensajes
+      </a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#services">
+        <%= image_tag("services_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <br/>
+        Anuncios
+      </a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#events">
+        <%= image_tag("calendar_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <br/>
+        Eventos
+      </a>
+    </li>
+    <li><a data-toggle="tab" href="#infoGov">
+      <%= image_tag("info_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <br/>
+        InfoLocal
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="timeline" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Some content.</p>
+    </div>
+    <div id="services" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Some content in menu 1.</p>
+    </div>
+    <div id="events" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Some content in menu 2.</p>
+    </div>
+    <div id="infoGov" class="tab-pane fade">
+      <h3>Menu 4</h3>
+      <p>Some content in menu 2.</p>
+    </div>
+  </div>
+</div>
