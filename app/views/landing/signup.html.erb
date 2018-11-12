@@ -1,0 +1,78 @@
+<%= javascript_include_tag 'funciones', 'data-turbolinks-track': 'reload' %>
+
+<div class="container bg-img-5 bg-full text-center">
+  <div class="backdrop"></div>
+  <div class="login-form-container" id="login-form" style="background-color: #ffffff94;">
+    <div class="login-form-content">
+      <br/><br/><br/>
+      <div class="login-form-header">
+      <h1 class="texto_login">Bienvenidos a Bogotáapp</h1>
+        <div class="logo">
+            <%= image_tag("logo.png", :alt => "Bogotáapp", style:"height: 130px; width: 130px;") %>
+        </div>
+        <h2 class="texto_login">Crea tu Cuenta, paso 1 de 2</h2>
+      </div>
+      <form method="post" action="" class="login-form form_login">
+        <div class="input-container">
+            <i class="fa fa-envelope">Número de Teléfono Celular: </i>
+            <br/>
+            +57 
+            <input type="text" class="input" id="celular" name="celular" placeholder="3001234657" />
+        </div>
+        <br/>
+        <div class="input-container">
+            <i class="fa fa-lock">Tipo de documento</i>
+            <br/>
+            <select>
+              <option>CC - Cédula de Ciudadanía</option>
+              <option>CE - Cédula de Extranjería</option>
+              <option>TI - Tarjeta de Identidad</option>
+            </select>
+            <i id="show-password" class="fa fa-eye"></i>
+        </div>
+        <br/>
+        <div class="input-container">
+            <i class="fa fa-lock">Ingresa tu número de Cedula</i>
+            <br/>
+            <input type="text"  id="cedula" class="input" name="password" placeholder="123456789"/>
+            <i id="show-password" class="fa fa-eye"></i>
+        </div>
+        <br/>
+        <div class="input-container">
+            <i class="fa fa-lock">Ingresa solamente el año de expedición de tu documento colombiano</i>
+            <br/>
+            <select>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <option>2002</option>
+              <option>2001</option>
+              <option>2000</option>
+            </select>
+        </div>
+        <br/>
+        <%= link_to 'Validar mis datos', nameapi_path(), {:style=>'font-size: 30px;', :class => "btn btn-lg btn-primary "} %>
+        <br/><br/>
+        <span style="cursor: pointer;" onclick="javascript:whySignUp();">
+          <%= image_tag("question.png", :alt => "Bogotáapp", style:"height: 40px; width: 40px;") %>
+          <br/>
+          <span style="font-size: 12px;">¿Por qué me piden estos datos?</span>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>

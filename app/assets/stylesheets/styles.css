@@ -1,0 +1,166 @@
+.landing_header { 
+    background-color: #f74444; /* Orange */
+    color: #fbfb6e;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.bg-img-1 {
+    /* The image used */
+    background-image:url(/assets/bogota1.jpg);
+}
+.bg-img-2 {
+    /* The image used */
+    background-image:url(/assets/bogota2.jpg);
+}
+.bg-img-3 {
+    background-image:url(/assets/bogota3.jpg);
+}
+.bg-img-4 {
+    background-image:url(/assets/bogota4.jpg);
+}
+.bg-img-5 {
+    background-image:url(/assets/capital.jpg);
+}
+.bg-img-6 {
+    background-image:url(/assets/capital2.jpg);
+}
+.bg-index {
+    /* Full height */
+    height: 450px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-full {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texto_imagen {
+	color: #000;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-style: italic;
+    background-color: #ffffff80;
+    font-weight: 600;
+}
+
+.texto_imagen_titulo {
+	color: #000;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    background-color: #ffffff80;
+    font-weight: 600;
+}
+
+.texto_login {
+	color: #000;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.form_login {
+	font-size: 25px;
+	font-style: italic;
+
+}
+
+.index_section {
+	height: 250px;
+	font-size: xx-large;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #dc3545;
+	z-index: 9999;
+	border: 0;
+	font-size: 16px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+	color: yellow !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #f4511e !important;
+	background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.menu-titles {
+	font-size: 12px;
+}
+
+.bgfooter {
+	background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+    color: #f5f5f5;
+}
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
