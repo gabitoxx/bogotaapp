@@ -1,9 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4 text-left">
-      <%= image_tag("logo.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
-      <br/>
-      BogotaApp
+      <%= image_tag("logo.png", :alt => "Bogotáapp", style:"height: 120px; width: 120px;") %>
     </div>
     <div class="col-sm-4 text-center">
       <%= image_tag("user1.jpg", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
@@ -16,34 +14,45 @@
       <p>Usuario: <b><i>Pepito Perez</i></b></p>
       <p>Localidad: <b>Puente Aranda</b></p>
       <p>Antiguedad en esta localidad: <b>2 meses</b></p>
+      <p style="cursor: pointer;">
+        <%= image_tag("cog.png", :alt => "Settings", style:"height: 20px; width: 20px;") %> 
+        Configuración de Cuenta
+      </p>
     </div>
-    
+  </div>
+
   <ul class="nav nav-tabs text-center">
     <li class="active">
       <a data-toggle="tab" href="#timeline">
-        <%= image_tag("timeline_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <%= image_tag("timeline_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
         <br/>
         Mensajes
       </a>
     </li>
     <li>
       <a data-toggle="tab" href="#services">
-        <%= image_tag("services_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <%= image_tag("services_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
         <br/>
         Anuncios
       </a>
     </li>
     <li>
       <a data-toggle="tab" href="#events">
-        <%= image_tag("calendar_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+        <%= image_tag("calendar_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
         <br/>
         Eventos
       </a>
     </li>
     <li><a data-toggle="tab" href="#infoGov">
-      <%= image_tag("info_tab.png", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
+      <%= image_tag("info_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
         <br/>
         InfoLocal
+      </a>
+    </li>
+    <li><a data-toggle="tab" href="#new-message">
+      <%= image_tag("create_message_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
+        <br/>
+        Crea tus mensajes
       </a>
     </li>
   </ul>
@@ -62,8 +71,10 @@
       <p>Some content in menu 2.</p>
     </div>
     <div id="infoGov" class="tab-pane fade">
-      <h3>Menu 4</h3>
-      <p>Some content in menu 2.</p>
+      <%= render 'infogov' %>
+    </div>
+    <div id="new-message" class="tab-pane fade">
+      <%= render 'infogov' %>
     </div>
   </div>
 </div>
