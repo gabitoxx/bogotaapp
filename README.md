@@ -28,6 +28,9 @@ Rails 5.1.6
 
 
 * System dependencies
+heroku --version
+heroku/7.14.4 win32-x64 node-v10.9.0
+
 
 * Configuration
 

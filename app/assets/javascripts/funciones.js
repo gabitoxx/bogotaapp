@@ -10,3 +10,10 @@ function wrongName(){
 	var m = "Nuestro servicio utiliza API's avaladas por el Gobierno Nacional de Colombia para obtener única y exclusivamente tu nombre, con el fin de validar tu nacionalidad. Si no coincide tu nombre con tu documento, te sugerimos acercarte a la Registraduría Nacional y validar tu información.";
 	alert(m);	
 }
+
+function config(){
+	var m = "Aquí podrá establecer valores por defecto, cambiar imgen de fondo, su Perfil e incluso hacer un 'Trasteo' de datos"
+			+ "\n\nTrasteo = Mudanza de localidad, la cual estará restringida a [ 1 mudanza al mes ], no será tan rápido el proceso de cambio de Localidad para evitar que las personas salten de una a la otra con facilidad.";
+	;
+	alert(m);	
+}

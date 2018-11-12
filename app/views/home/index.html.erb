@@ -1,29 +1,12 @@
+<%= javascript_include_tag('funciones') %> 
+
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4 text-left">
-      <%= image_tag("logo.png", :alt => "Bogotáapp", style:"height: 120px; width: 120px;") %>
-    </div>
-    <div class="col-sm-4 text-center">
-      <%= image_tag("user1.jpg", :alt => "Bogotáapp", style:"height: 80px; width: 80px;") %>
-      <br/>
-      Avatar
-      <br/>
-      Alias: <i>por definir</i>
-    </div>
-    <div class="col-sm-4 text-right">
-      <p>Usuario: <b><i>Pepito Perez</i></b></p>
-      <p>Localidad: <b>Puente Aranda</b></p>
-      <p>Antiguedad en esta localidad: <b>2 meses</b></p>
-      <p style="cursor: pointer;">
-        <%= image_tag("cog.png", :alt => "Settings", style:"height: 20px; width: 20px;") %> 
-        Configuración de Cuenta
-      </p>
-    </div>
-  </div>
+
+  <%= render 'header' %>
 
   <ul class="nav nav-tabs text-center">
     <li class="active">
-      <a data-toggle="tab" href="#timeline">
+      <a data-toggle="tab" href="#timeline" id="tab1">
         <%= image_tag("timeline_tab.png", :alt => "Bogotáapp", style:"height: 50px; width: 50px;") %>
         <br/>
         Mensajes
@@ -59,22 +42,28 @@
 
   <div class="tab-content">
     <div id="timeline" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Some content.</p>
+      <%= render 'timeline' %>
     </div>
     <div id="services" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Some content in menu 1.</p>
+      <%= render 'services' %>
     </div>
     <div id="events" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Some content in menu 2.</p>
+      <%= render 'eventos' %>
     </div>
     <div id="infoGov" class="tab-pane fade">
       <%= render 'infogov' %>
     </div>
     <div id="new-message" class="tab-pane fade">
-      <%= render 'infogov' %>
+      <%= render 'newmsg' %>
     </div>
   </div>
 </div>
+
+
+<script type="text/javascript">
+    $("document").ready(function() {
+        alert('hey');
+        $("#tab1").trigger('click');
+
+    });
+</script>
