@@ -1,7 +1,7 @@
 # README
 
 ### bogotaapp
-Proyecto FedeSoft de Gabriel Solórzano y Harol Martinez
+Proyecto FedeSoft de Gabriel Solórzano y Harol Martinez (versión 1.0 - prototipado inicial antes de la reunión del sáb 24nov2018)
 
 ### Reto
 INTEGRACIÓN COMUNITARIA
