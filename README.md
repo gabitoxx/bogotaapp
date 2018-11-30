@@ -1,6 +1,10 @@
 # README
 
 ### bogotaapp
+(update) remitirse a la versión 2.0 de este prototipado en https://github.com/gabitoxx/bogotaapp2.0.git
+
+#### ya que contiene las correcciones propuestas por la reunión de refinamiento del sáb 28nov2018
+
 Proyecto FedeSoft de Gabriel Solórzano y Harol Martinez (versión 1.0 - prototipado inicial antes de la reunión del sáb 24nov2018)
 
 ### Reto
